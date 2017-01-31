@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/card_view_background"
+    android:clickable="true"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/news_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dhawan"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/gradient"
+            android:layout_alignLeft="@+id/news_card_image"
+            android:layout_alignRight="@+id/news_card_image"
+            android:layout_alignBottom="@+id/news_card_image" />
+
+        <TextView
+            android:id="@+id/news_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android warriors should be dressed in the manner "
+            android:layout_above="@+id/share_button"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:textColor="#f7f1f1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_marginTop="7dp"
+            android:textSize="26sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f9f5f5"
+            android:ellipsize="end"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:text="1 day ago."
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/news_card_image"
+            android:layout_toRightOf="@+id/coc_logo"
+            android:layout_toEndOf="@+id/coc_logo" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/coc_logo"
+            android:src="@drawable/coc_logo"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/news_card_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/share_button"
+            android:src="@android:drawable/ic_menu_share"
+            android:layout_marginRight="21dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginEnd="21dp"
+            android:layout_alignTop="@+id/time_stamp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/badButton"
+            android:src="@drawable/ic_add_white_24dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_below="@+id/news_card_title"
+            android:layout_toLeftOf="@+id/share_button"
+            android:layout_toStartOf="@+id/share_button" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_in">Sign In</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="schedule">Schedule</string>
+    <string name="ranking">Ranking</string>
+    <string name="schedule_title">Schedule</string>
+    <string name="Ranking_title">Ranking</string>
+    <string name="Article">Article</string>
+    <string name="connection_confirm">Please make sure you are connected to the Internet</string>
+    <string name="Gallery">Gallery</string>
+</resources>

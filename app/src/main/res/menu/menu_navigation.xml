@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <group android:id="@+id/setting_nav">
+
+    <item
+        android:id="@+id/nav_news"
+        android:title="@string/nav_item_news"
+        android:icon="@drawable/ic_bubble_chart_black"/>
+
+    <item
+        android:id="@+id/nav_ranking"
+        android:title="@string/ranking"
+        android:icon="@drawable/ic_bubble_chart_black"/>
+    <item
+        android:id="@+id/nav_fixture"
+        android:title="@string/schedule"
+        android:icon="@drawable/ic_bubble_chart_black"/>
+
+     <item
+        android:id="@+id/nav_gallery"
+        android:title="@string/Gallery"
+        android:icon="@drawable/ic_bubble_chart_black"/>
+
+     <item
+        android:id="@+id/nav_bookmark"
+        android:title="@string/bookmark"
+        android:icon="@drawable/ic_bubble_chart_black"/>
+
+    </group>
+    <group android:id="@+id/settings_navigation">
+
+        <item android:icon="@drawable/ic_bubble_chart_black"
+            android:title="@string/sign_in"
+            android:id="@+id/sign_nav"/>
+        <item android:icon="@drawable/ic_bubble_chart_black"
+            android:title="@string/about"
+            android:id="@+id/action_about"/>
+
+    </group>
+
+</menu>

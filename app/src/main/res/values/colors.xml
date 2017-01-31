@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b2a2a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="textColorPrimary">#0b0b0b</color>
+    <color name="articleheader">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorAccent">#8e0808</color>
+    <color name="secondPrimary">#9e2105</color>
+    <color name="secondPrimaryDark">#660e0e</color>
+    <color name="ranking_Primary">#1b8702</color>
+    <color name="ranking_PrimaryDark">#104b03</color>
+    <color name="sectionHeader">#ded9d8</color>
+    <color name="navigationBarColor">#D32F2F</color>
+    <color name="fragment_background">#e1dfdf</color>
+    <color name="navigationBarBackground">#00796B</color>
+    <color name="card_view_background">#ffffff</color>
+    <color name="navigationBarBackgroundHeader">#f5f9f8</color>
+    <color name="collapsedTitle">#ffffff</color>
+
+    <color name="titleBackground">#F5F5F5</color>
+    <color name="iconsColor">#838383</color>
+</resources>

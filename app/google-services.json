@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "211330823401",
+    "project_id": "tsd-hub"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211330823401:android:61b1174dcdf65962",
+        "android_client_info": {
+          "package_name": "com.example.abhinav.tsdhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211330823401-o8b25348fo4avmdn3pjhugd2cc55v2fj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhinav.tsdhub",
+            "certificate_hash": "C24F7680CB95E25CBCB1A558715DA6D14AE0AED2"
+          }
+        },
+        {
+          "client_id": "211330823401-efnfss50sf03iadsmtj5g522k58faj04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRyDIlJeSlTBMKZ--YWq0IH4hLv2rptFc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

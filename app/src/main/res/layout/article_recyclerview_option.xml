@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/articleTitle"
+        android:background="@color/titleBackground">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_title"
+            android:text="Article Title"
+            android:textSize="26sp"
+            android:textColor="@color/textColorPrimary"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="timeStamp"
+            android:id="@+id/aiTimeStamp"
+            android:textColor="@color/textColorPrimary"
+            android:layout_below="@+id/article_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/articleOption"
+        android:layout_below="@+id/articleTitle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/articleView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aiViewImage"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/iconsColor"
+                android:src="@drawable/ic_visibility_white_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aiViewText"
+                android:text="Views"
+                android:textSize="18sp"
+                android:layout_below="@+id/aiViewImage"
+                android:textColor="@color/textColorPrimary"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aiBookamrk"
+            android:tint="@color/iconsColor"
+            android:src="@drawable/ic_bookmark_border_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aiShare"
+            android:tint="@color/iconsColor"
+            android:src="@drawable/ic_share_white_24dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/aiBookamrk"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/articleData"
+        android:layout_below="@+id/articleOption">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/article_content"
+            android:textSize="20sp"
+            android:text="@string/articlestory"
+            android:textColor="@color/textColorPrimary"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

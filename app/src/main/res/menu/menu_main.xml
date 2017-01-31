@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.abhinav.tsdhub.MainActivity">
+
+
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:orderInCategory="2"
+        android:title="@string/bookmark"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_bookmark_white_18dp"/>
+
+
+    <item
+        android:id="@+id/search_bar"
+        android:orderInCategory="1"
+        android:title="@string/search"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|always"
+        android:icon="@drawable/ic_search_white_24dp"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="3"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="4"
+        android:title="@string/help"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+
+
+</menu>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:id="@+id/schedule_Recent"
+    android:layout_marginTop="7dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/card_view_background"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/schedule_Recent_layout">
+
+        <!--Series title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_linear"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Border Gavaskar Series"
+                android:id="@+id/schedule_Recent_Series_title"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/navigationBarBackground"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_view"
+            android:layout_below="@+id/title_linear">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e4dfdf"
+                android:id="@+id/schedule_Recent_view_horizontal"
+                tools:ignore="NotSibling" />
+        </LinearLayout>
+
+        <!--veniue, Format-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_venue"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/linear_view"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Recent_match_type"
+                android:layout_gravity="center"
+                android:text="Test" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Recent_hyphen"
+                android:text=" | "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Recent_venue"
+                android:text="London, England" />
+        </LinearLayout>
+
+        <!--Date day-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linear_day"
+            android:layout_weight="0.26"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_below="@+id/linear_venue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu-Mon"
+                android:id="@+id/schedule_Recent_day"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/or_sign_1"
+                android:text=" | "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jul 16-18"
+                android:id="@+id/schedule_Recent_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/or_sign_2"
+                android:text=" | "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17:30 PM IST"
+                android:id="@+id/schedule_Recent_time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_score"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/linear_day"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!--Team 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear_team1"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUS"
+                    android:textSize="25sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:id="@+id/Recent_team1_name"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/Recent_team1_logo"
+                    android:src="@drawable/coc_logo"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recent_team1_score1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="325/10 (103.4)"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recent_team1_score2"
+                    android:text="425/5 (194.5)"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!--innings-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_test_innings"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recent_test_1stinnings"
+                    android:text="1st Innings"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Recent_test_2stinnings"
+                    android:text="2nd Innings"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+
+            <!--Team 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear_team2"
+                android:layout_gravity="end"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.25">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="25sp"
+                    android:id="@+id/Recent_team2_name"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/Recent_team2_logo"
+                    android:src="@drawable/coc_logo"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recent_team2_score1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:text="450/10 (189.7)"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Recent_team2_score2"
+                    android:text="425/5 (194.5)"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Result-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/linear_score"
+            android:layout_centerHorizontal="true"
+            android:gravity="center|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:text="Ind won by 9 wickets and an innings"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
